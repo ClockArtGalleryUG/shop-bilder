@@ -273,4 +273,19 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
  <div><h2>Wir finden das Problem Ihrer Uhr und bringen Sie wieder zum Laufen.</h2></div>
  <div class="btns"><a class="btn btn-gold" href="/kontakt">Kontakt</a></div>
 </div></section>
+<script>
+(function(){
+ if(window.__cagAusrichten)return; window.__cagAusrichten=1;
+ var SEL='.cag .hero,.cag .pagehead,.cag .band,.cag .cta,.cag section.alt,.ec-store__category-page--0 .grid__categories,.ec-store__category-page--0 .ec-page-title__featured-products,.ec-store__category-page--0 .grid__wrap-inner';
+ function logo(){var l=document.querySelector('.u_1066197121 img');if(l&&l.getBoundingClientRect().width)return l;var a=document.querySelectorAll('img');for(var i=0;i<a.length;i++){var r=a[i].getBoundingClientRect();if(r.top<220&&r.width>40&&r.left<400)return a[i]}return null}
+ function run(){var lg=logo();var els=document.querySelectorAll(SEL);for(var i=0;i<els.length;i++){var el=els[i];el.style.removeProperty('margin-left');}
+  if(!lg||window.innerWidth<768)return;var L=lg.getBoundingClientRect().left;
+  for(var j=0;j<els.length;j++){var e=els[j];var cur=e.getBoundingClientRect().left;var m=parseFloat(getComputedStyle(e).marginLeft)||0;var d=cur-L;if(d>2)e.style.setProperty('margin-left',(m-d)+'px','important');}}
+ var t;function soon(){clearTimeout(t);t=setTimeout(run,120)}
+ window.addEventListener('resize',soon);window.addEventListener('load',run);
+ if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+ var n=0,iv=setInterval(function(){run();if(++n>15)clearInterval(iv)},1000);
+ if(window.MutationObserver){new MutationObserver(function(ms){for(var k=0;k<ms.length;k++){var x=ms[k].target;if(x&&x.closest&&x.closest('.ec-store')){soon();return}}}).observe(document.body,{childList:true,subtree:true})}
+})();
+</script>
 </div>

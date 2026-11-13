@@ -246,4 +246,19 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
  <h3>Urheberrecht</h3>
  <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 </div></section>
+<script>
+(function(){
+ if(window.__cagAusrichten)return; window.__cagAusrichten=1;
+ var SEL='.cag .hero,.cag .pagehead,.cag .band,.cag .cta,.cag section.alt,.ec-store__category-page--0 .grid__categories,.ec-store__category-page--0 .ec-page-title__featured-products,.ec-store__category-page--0 .grid__wrap-inner';
+ function logo(){var l=document.querySelector('.u_1066197121 img');if(l&&l.getBoundingClientRect().width)return l;var a=document.querySelectorAll('img');for(var i=0;i<a.length;i++){var r=a[i].getBoundingClientRect();if(r.top<220&&r.width>40&&r.left<400)return a[i]}return null}
+ function run(){var lg=logo();var els=document.querySelectorAll(SEL);for(var i=0;i<els.length;i++){var el=els[i];el.style.removeProperty('margin-left');}
+  if(!lg||window.innerWidth<768)return;var L=lg.getBoundingClientRect().left;
+  for(var j=0;j<els.length;j++){var e=els[j];var cur=e.getBoundingClientRect().left;var m=parseFloat(getComputedStyle(e).marginLeft)||0;var d=cur-L;if(d>2)e.style.setProperty('margin-left',(m-d)+'px','important');}}
+ var t;function soon(){clearTimeout(t);t=setTimeout(run,120)}
+ window.addEventListener('resize',soon);window.addEventListener('load',run);
+ if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+ var n=0,iv=setInterval(function(){run();if(++n>15)clearInterval(iv)},1000);
+ if(window.MutationObserver){new MutationObserver(function(ms){for(var k=0;k<ms.length;k++){var x=ms[k].target;if(x&&x.closest&&x.closest('.ec-store')){soon();return}}}).observe(document.body,{childList:true,subtree:true})}
+})();
+</script>
 </div>
