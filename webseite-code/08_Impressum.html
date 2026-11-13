@@ -189,15 +189,17 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 .cag .show-stage{position:relative;border-radius:0 44px 0 44px;overflow:hidden;background:var(--ink)}
 .cag .show-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .cag .show-track::-webkit-scrollbar{display:none}
-.cag .show-slide{flex:0 0 100%;margin:0;scroll-snap-align:start;height:540px}
-.cag .show-slide img{width:100%;height:100%;object-fit:cover;display:block;border-radius:0}
+.cag .show-slide{flex:0 0 100%;margin:0;scroll-snap-align:start;height:480px;background:var(--ink)}
+.cag .show-slide img{width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;display:block;border-radius:0!important;margin:0!important}
+.cag .show,.cag .show-stage,.cag .show-track{width:100%;max-width:100%;box-sizing:border-box}
+.cag .show{max-width:900px!important}
 .cag .show-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.85);color:var(--ink);font-size:30px;line-height:42px;cursor:pointer;transition:background .2s}
 .cag .show-btn:hover{background:#FFFFFF}
 .cag .show-prev{left:16px}.cag .show-next{right:16px}
 .cag .show-dots{display:flex;justify-content:center;gap:10px;margin-top:16px}
 .cag .show-dots button{width:9px;height:9px;padding:0;border:1px solid var(--golddark);border-radius:50%;background:transparent;cursor:pointer}
 .cag .show-dots button.on{background:var(--golddark)}
-@media (max-width:700px){.cag .show-slide{height:300px}.cag .show-stage{border-radius:0 28px 0 28px}.cag .show-btn{width:38px;height:38px;font-size:24px;line-height:34px}}
+@media (max-width:700px){.cag .show-slide{height:340px}.cag .show-stage{border-radius:0 28px 0 28px}.cag .show-btn{width:38px;height:38px;font-size:24px;line-height:34px}}
 /* Absicherung gegen Vorgaben des IONOS-Baukastens */
 .cag{text-align:left!important}
 .cag h1,.cag h2,.cag h3,.cag h4,.cag p,.cag li,.cag td,.cag small,.cag figure{text-align:inherit!important}
