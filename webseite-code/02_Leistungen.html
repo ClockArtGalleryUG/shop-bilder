@@ -212,8 +212,8 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 .cag p{margin:0}
 .cag img{max-width:100%}
 .cag .karte-hinweis,.cag .center,.cag .show-dots{text-align:center!important}
-.cag{position:relative}
-.cag::before{content:"";position:absolute;top:0;bottom:0;left:calc(-1 * var(--cag-ext,0px));width:var(--cag-ext,0px);background:inherit;pointer-events:none}
+.cag{position:relative;z-index:0}
+.cag::before{content:"";position:absolute;top:0;bottom:0;left:calc(-1 * var(--cag-ext,0px));width:var(--cag-ext,0px);background:inherit;pointer-events:none;z-index:-1}
 .cag .tiles{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))!important}
 .cag .tiles a{padding:18px 18px!important;gap:10px;font-size:clamp(15px,1.25vw,17px)!important;line-height:1.3!important}
 .cag .tiles a span{flex:0 0 auto}
