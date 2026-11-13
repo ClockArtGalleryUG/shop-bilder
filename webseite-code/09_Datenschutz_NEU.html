@@ -212,6 +212,10 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 .cag p{margin:0}
 .cag img{max-width:100%}
 .cag .karte-hinweis,.cag .center,.cag .show-dots{text-align:center!important}
+.cag .legal .w{background:#FFFFFF;border:1px solid var(--line);border-radius:0 28px 0 28px;margin:24px auto 40px!important;padding:44px 48px 52px!important}
+.cag .legal h2:first-child,.cag .legal p:first-child{margin-top:0}
+@media (max-width:700px){.cag .legal .w{margin:12px 8px 24px!important;padding:28px 20px 34px!important}}
+#dm .dmRespRow:has(.cag .legal){padding-top:24px!important}
 .cag{position:relative;z-index:0}
 .cag::before{content:"";position:absolute;top:0;bottom:0;left:calc(-1 * var(--cag-ext,0px));width:var(--cag-ext,0px);background:inherit;pointer-events:none;z-index:-1}
 .cag .tiles{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))!important}
@@ -221,8 +225,11 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 .cag .grid .card h3{font-size:clamp(15px,1.4vw,17px)!important}
 @media (max-width:520px){.cag .tiles{grid-template-columns:1fr!important}.cag .tiles a{padding:16px 18px!important;font-size:16px!important}}
 </style>
-<section class="legal"><div class="w">
+<section class="pagehead dark"><div class="w">
+ <p class="eyebrow">Rechtliches</p>
  <h1>Datenschutzerklärung</h1>
+</div></section>
+<section class="legal"><div class="w">
  <p>Stand: 13.11.2026</p>
 
  <h2>1. Verantwortlicher</h2>
@@ -285,7 +292,7 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 <script>
 (function(){
  if(window.__cagAusrichten)return; window.__cagAusrichten=1;
- var SEL='.cag .hero,.cag .pagehead,.cag .band,.cag .cta,.cag section.alt,.ec-store__category-page--0 .grid__categories,.ec-store__category-page--0 .ec-page-title__featured-products,.ec-store__category-page--0 .grid__wrap-inner';
+ var SEL='.cag .hero,.cag .pagehead,.cag .band,.cag .cta,.cag section.alt';
  function logo(){var l=document.querySelector('.u_1066197121 img');if(l&&l.getBoundingClientRect().width)return l;var a=document.querySelectorAll('img');for(var i=0;i<a.length;i++){var r=a[i].getBoundingClientRect();if(r.top<220&&r.width>40&&r.left<400)return a[i]}return null}
  function run(){var lg=logo();var els=document.querySelectorAll(SEL);for(var i=0;i<els.length;i++){var el=els[i];el.style.removeProperty('margin-left');}
   var cg=document.querySelectorAll('.cag');for(var c=0;c<cg.length;c++)cg[c].style.setProperty('--cag-ext','0px');
