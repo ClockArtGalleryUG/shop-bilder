@@ -212,6 +212,35 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 .cag p{margin:0}
 .cag img{max-width:100%}
 .cag .karte-hinweis,.cag .center,.cag .show-dots{text-align:center!important}
+/* ===== Kompakter: weniger Höhe je Abschnitt ===== */
+.cag .pagehead .w{padding-top:36px!important;padding-bottom:32px!important;gap:10px!important}
+.cag .split .w{padding-top:36px!important;padding-bottom:36px!important;gap:32px!important}
+.cag .flow .w,.cag .range .w,.cag .origin .w,.cag .shop .w{padding-top:40px!important;padding-bottom:40px!important}
+.cag .cta .w{padding-top:30px!important;padding-bottom:30px!important;gap:20px!important}
+.cag .hero-text{padding:44px 36px 40px 28px!important;gap:14px!important}
+.cag .band-text{padding:40px 28px 40px 44px!important;gap:14px!important}
+.cag .hero-img{min-height:340px!important}.cag .band-img{min-height:320px!important}
+.cag .split .img img{height:320px!important}
+.cag .head{margin-bottom:20px!important}
+.cag .card .ph{height:170px}.cag .grid .card .ph{height:130px!important}
+.cag .gal img,.cag .gal.dicht img{height:190px!important}
+.cag .show-slide{height:400px!important}
+.cag .karte{min-height:340px!important}
+.cag .hero,.cag .pagehead,.cag .band,.cag .cta,.cag section.alt{margin-top:10px!important;margin-bottom:10px!important}
+.cag h1{font-size:clamp(30px,3.8vw,46px)!important}
+.cag h2{font-size:clamp(24px,2.6vw,32px)!important}
+.cag .txt{display:flex;flex-direction:column;gap:10px}
+.cag .txt h3{margin-top:8px!important}
+.cag .hinweis-gold{border-left:3px solid var(--gold);padding-left:14px}
+.cag .zwei{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:center}
+.cag .zwei .show{max-width:none!important;margin:0}
+.cag .sprung{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.cag .sprung a{display:inline-flex;gap:10px;align-items:center;padding:10px 16px;border:1px solid #3A342B;border-radius:0 14px 0 14px;color:var(--ivory);font-weight:600;font-size:15px;text-decoration:none}
+.cag .sprung a span{color:var(--gold)}
+.cag .sprung a:hover{border-color:var(--gold)}
+.cag [id]{scroll-margin-top:110px}
+@media (max-width:900px){.cag .zwei{grid-template-columns:1fr;gap:20px}}
+@media (max-width:700px){.cag .pagehead .w{padding-top:28px!important;padding-bottom:26px!important}.cag .split .w{padding-top:26px!important;padding-bottom:26px!important;gap:20px!important}.cag .flow .w,.cag .range .w{padding-top:28px!important;padding-bottom:28px!important}.cag .hero-text,.cag .band-text{padding:30px 20px!important}.cag .hero-img,.cag .band-img{min-height:240px!important}.cag .split .img img{height:240px!important}.cag .show-slide{height:300px!important}}
 .cag .legal .w{background:#FFFFFF;border:1px solid var(--line);border-radius:0 28px 0 28px;margin:24px auto 40px!important;padding:44px 48px 52px!important}
 .cag .legal h2:first-child,.cag .legal p:first-child{margin-top:0}
 @media (max-width:700px){.cag .legal .w{margin:12px 8px 24px!important;padding:28px 20px 34px!important}}
@@ -228,16 +257,135 @@ background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(26,24,20
 <section class="pagehead dark"><div class="w">
  <p class="eyebrow">Clock Art Gallery · Potsdam</p>
  <h1>Leistungen</h1>
+ <div class="sprung"><a href="#revision">Revision <span>↓</span></a><a href="#reparatur">Reparatur <span>↓</span></a><a href="#veredelung">Restauration und Veredelung <span>↓</span></a></div>
 </div></section>
-<section class="range"><div class="w">
- <div class="grid">
-  <a class="card" href="/revision"><div class="ph"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/leistungen-01.jpg" alt="Räderwerk einer Großuhr – Revision" loading="lazy"></div><div class="tx"><h3>Revision</h3><p>Uhrenservice</p><span class="more">MEHR ERFAHREN →</span></div></a>
-  <a class="card" href="/reparatur"><div class="ph"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/leistungen-02.jpg" alt="Uhrwerk-Reparatur in der Werkstatt" loading="lazy"></div><div class="tx"><h3>Reparatur</h3><span class="more">MEHR ERFAHREN →</span></div></a>
-  <a class="card" href="/veredelung"><div class="ph"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/leistungen-03.jpg" alt="Zifferblatt einer Wanduhr – Restauration und Veredelung" loading="lazy"></div><div class="tx"><h3>Restauration und Veredelung</h3><span class="more">MEHR ERFAHREN →</span></div></a>
+
+<section class="split" id="revision"><div class="w">
+ <div class="txt">
+  <p class="eyebrow">Leistungen</p>
+  <h2>Revision</h2>
+  <p>Ihre Uhr läuft nicht mehr! Bleibt Sie ständig stehen oder geht zu langsam. Oftmals sind altes Öl, Staub oder auch Hautschuppen das Problem. Durch eine Komplettreinigung und neues Öl könnte auch Ihre totgeglaubte Uhr wieder laufen.</p>
+  <p>Wir beraten Sie gern.</p>
+  <h3>Die Revision beinhaltet,</h3>
+  <p>Demontieren und Reinigen des Werkes, Rolieren der Zapfen, wenn nötig, Montieren und Ölen des Werkes sowie anschließender Probelauf</p>
+ </div>
+ <div class="img"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/revision-01.jpg?v=2" alt="Revision; Kleinuhrrevision; Uhrenwartung" loading="lazy"></div>
+</div></section>
+<section class="split rev alt"><div class="w">
+ <div class="txt">
+  <h3>Revision von Grossuhren</h3>
+  <p>Dieser Service beinhaltet die komplette Zerlegung der Uhr, das Reinigen aller Teile und falls nötig das Rollieren der Zapfen. Nach der Revision wird die Uhr 4-7 Tage auf ihre Laufrichtigkeit geprüft und reguliert.</p>
+  <p>Jede Uhr ist individuell. Wir beraten Sie gerne und holen die Uhr auf Anfrage bei Ihnen ab.</p>
+  <p class="hinweis-gold"><b>Garantie:</b> Auf die von uns ausgeführten Revisionen geben wir, wenn nicht anders vereinbart, 1 Jahr Garantie.</p>
+ </div>
+ <div class="img"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/revision-02.jpg" alt="Revision von Großuhren" loading="lazy"></div>
+</div></section>
+
+<section class="flow" id="reparatur"><div class="w">
+ <div class="zwei">
+  <div class="txt">
+   <p class="eyebrow">Leistungen</p>
+   <h2>Reparatur</h2>
+   <p>Die Firma Clock Art Gallery hat sich auf die Fahne geschrieben im Vintage- und Antikuhrenbereich dort anzusetzen, wo andere aufhören.</p>
+   <p>Das Clock Art-Team ist für die Instandsetzung ihrer kleinen und großen Schätze stets ein guter Partner.</p>
+   <h3>Wir bieten Ihnen:</h3>
+   <p>Reparaturen z.B. Zähne von Rädern und Federhäusern, Ersetzen von Zapfen und Lagern, Reparaturen an Laternentrieben, Federn, etc.</p>
+   <p>( gilt auch für Kleinuhren ).</p>
+   <p class="hinweis-gold"><b>Wir finden das Problem Ihrer Uhr und bringen Sie wieder zum Laufen.</b></p>
+  </div>
+  <div class="show" data-auto="5000" aria-roledescription="Diaschau" aria-label="Bilder aus der Reparatur">
+  <div class="show-stage">
+   <div class="show-track" tabindex="0">
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-01.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-02.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-03.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-04.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-05.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-06.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-07.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-08.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-09.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-10.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-11.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/reparatur-12.jpg" alt="Uhrenreparatur; Großuhrreparatur; Uhrenrestauration" loading="lazy"></figure>
+   </div>
+   <button type="button" class="show-btn show-prev" aria-label="Vorheriges Bild">&#8249;</button>
+   <button type="button" class="show-btn show-next" aria-label="Nächstes Bild">&#8250;</button>
+  </div>
+  <div class="show-dots"><button type="button" aria-label="Bild 1 zeigen" class="on"></button><button type="button" aria-label="Bild 2 zeigen"></button><button type="button" aria-label="Bild 3 zeigen"></button><button type="button" aria-label="Bild 4 zeigen"></button><button type="button" aria-label="Bild 5 zeigen"></button><button type="button" aria-label="Bild 6 zeigen"></button><button type="button" aria-label="Bild 7 zeigen"></button><button type="button" aria-label="Bild 8 zeigen"></button><button type="button" aria-label="Bild 9 zeigen"></button><button type="button" aria-label="Bild 10 zeigen"></button><button type="button" aria-label="Bild 11 zeigen"></button><button type="button" aria-label="Bild 12 zeigen"></button></div>
+ </div>
+<script>
+(function(){document.querySelectorAll('.cag .show').forEach(function(s){
+ if(s.getAttribute('data-ok'))return;s.setAttribute('data-ok','1');
+ var t=s.querySelector('.show-track'),n=t.children.length,d=s.querySelectorAll('.show-dots button'),i=0,timer=null,
+ still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function mark(){for(var k=0;k<d.length;k++){d[k].className=k==i?'on':''}}
+ function go(x){i=(x+n)%n;t.scrollTo({left:i*t.clientWidth,behavior:still?'auto':'smooth'});mark()}
+ t.addEventListener('scroll',function(){var x=Math.round(t.scrollLeft/t.clientWidth);if(x!=i&&x>=0&&x<n){i=x;mark()}},{passive:true});
+ s.querySelector('.show-prev').onclick=function(){go(i-1);stop()};
+ s.querySelector('.show-next').onclick=function(){go(i+1);stop()};
+ for(var k=0;k<d.length;k++){(function(k){d[k].onclick=function(){go(k);stop()}})(k)}
+ function start(){if(still||timer)return;timer=setInterval(function(){go(i+1)},+s.getAttribute('data-auto')||5000)}
+ function stop(){clearInterval(timer);timer=null}
+ s.addEventListener('mouseenter',stop);s.addEventListener('mouseleave',start);s.addEventListener('touchstart',stop,{passive:true});
+ window.addEventListener('resize',function(){t.scrollTo({left:i*t.clientWidth})});
+ start();
+})})();
+</script>
  </div>
 </div></section>
+
+<section class="flow alt" id="veredelung"><div class="w">
+ <div class="zwei">
+  <div class="txt">
+   <p class="eyebrow">Leistungen</p>
+   <h2>Restauration und Veredelung</h2>
+   <p>Die Verchromung blättert ab, oder ist das Metall des Gehäuses zerkratzt durch die Gebrauchsspuren der Zeit?</p>
+   <p>Verliert Ihr alter Regulator sein Furnier oder sind gar Teile abgebrochen?</p>
+   <p>Wünschen Sie einen Neubau mit Ihrem alten Uhrwerk?</p>
+   <p>Alter hinterlässt seine Spuren.</p>
+   <p>Wir restaurieren und veredeln nahezu alle Oberflächen.</p>
+   <p>Ebenso ersetzen wir Gläser oder polieren auch Kunstoffgläser wieder auf.</p>
+   <p class="hinweis-gold"><b>Wir werten Ihr gutes Stück für Sie auf!</b></p>
+  </div>
+  <div class="show" data-auto="5000" aria-roledescription="Diaschau" aria-label="Bilder zu Restauration und Veredelung">
+  <div class="show-stage">
+   <div class="show-track" tabindex="0">
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-01.jpg" alt="Restauration und Veredelung von Uhren"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-02.jpg" alt="Restauration und Veredelung von Uhren" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-03.jpg" alt="Restauration und Veredelung von Uhren" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-04.jpg" alt="Restauration und Veredelung von Uhren" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-05.jpg" alt="Restauration und Veredelung von Uhren" loading="lazy"></figure>
+   <figure class="show-slide"><img src="https://cdn.jsdelivr.net/gh/ClockArtGalleryUG/shop-bilder@main/webseite/veredelung-06.jpg" alt="Restauration und Veredelung von Uhren" loading="lazy"></figure>
+   </div>
+   <button type="button" class="show-btn show-prev" aria-label="Vorheriges Bild">&#8249;</button>
+   <button type="button" class="show-btn show-next" aria-label="Nächstes Bild">&#8250;</button>
+  </div>
+  <div class="show-dots"><button type="button" aria-label="Bild 1 zeigen" class="on"></button><button type="button" aria-label="Bild 2 zeigen"></button><button type="button" aria-label="Bild 3 zeigen"></button><button type="button" aria-label="Bild 4 zeigen"></button><button type="button" aria-label="Bild 5 zeigen"></button><button type="button" aria-label="Bild 6 zeigen"></button></div>
+ </div>
+<script>
+(function(){document.querySelectorAll('.cag .show').forEach(function(s){
+ if(s.getAttribute('data-ok'))return;s.setAttribute('data-ok','1');
+ var t=s.querySelector('.show-track'),n=t.children.length,d=s.querySelectorAll('.show-dots button'),i=0,timer=null,
+ still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function mark(){for(var k=0;k<d.length;k++){d[k].className=k==i?'on':''}}
+ function go(x){i=(x+n)%n;t.scrollTo({left:i*t.clientWidth,behavior:still?'auto':'smooth'});mark()}
+ t.addEventListener('scroll',function(){var x=Math.round(t.scrollLeft/t.clientWidth);if(x!=i&&x>=0&&x<n){i=x;mark()}},{passive:true});
+ s.querySelector('.show-prev').onclick=function(){go(i-1);stop()};
+ s.querySelector('.show-next').onclick=function(){go(i+1);stop()};
+ for(var k=0;k<d.length;k++){(function(k){d[k].onclick=function(){go(k);stop()}})(k)}
+ function start(){if(still||timer)return;timer=setInterval(function(){go(i+1)},+s.getAttribute('data-auto')||5000)}
+ function stop(){clearInterval(timer);timer=null}
+ s.addEventListener('mouseenter',stop);s.addEventListener('mouseleave',start);s.addEventListener('touchstart',stop,{passive:true});
+ window.addEventListener('resize',function(){t.scrollTo({left:i*t.clientWidth})});
+ start();
+})})();
+</script>
+ </div>
+</div></section>
+
 <section class="cta"><div class="w">
- <div><h2>Öffnungszeiten</h2><p>Mo, Fr Nur nach Vereinbarung · Di, Do 11:00 - 18:00 · Mittwoch 11:00 - 15:30 · Sa - So Geschlossen</p></div>
+ <div><h2>Sprechen Sie uns an, wir helfen Ihnen gerne weiter</h2><p>Mo, Fr Nur nach Vereinbarung · Di, Do 11:00 - 18:00 · Mittwoch 11:00 - 15:30 · Sa - So Geschlossen</p></div>
  <div class="btns"><a class="btn btn-gold" href="/kontakt">Kontakt</a></div>
 </div></section>
 <script>
